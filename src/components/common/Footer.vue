@@ -6,9 +6,9 @@ const currentYear = ref(new Date().getFullYear());
 
 const quickLinks = ref([
   { label: "Home", href: "#" },
+  { label: "Skills", href: "#skills" },
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
-  { label: "Resume", href: "#resume" },
 ]);
 
 const socialLinks = ref([

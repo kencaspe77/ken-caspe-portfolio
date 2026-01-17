@@ -4,9 +4,9 @@ import { Mail, Github, Facebook } from "lucide-vue-next";
 
 const navLinks = ref([
   { href: "#", text: "Home" },
+  { href: "#skills", text: "Skills" },
   { href: "#about", text: "About" },
   { href: "#projects", text: "Projects" },
-  { href: "#resume", text: "Resume" },
 ]);
 
 const socialLinks = ref([

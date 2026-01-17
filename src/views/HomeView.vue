@@ -1,35 +1,27 @@
 <script setup>
 import NavBar from "@/components/common/NavBar.vue";
 import Hero from "@/components/sections/Hero.vue";
+import Skills from "@/components/sections/Skills.vue";
 import Projects from "@/components/sections/Projects.vue";
 import About from "@/components/sections/About.vue";
-import Resume from "@/components/sections/Resume.vue";
 import Footer from "@/components/common/Footer.vue";
 
 const sections = [
   {
     id: "home",
     component: Hero,
-    bgColor: "bg-amber-950",
-    textColor: "text-white",
   },
   {
-    id: "projects",
-    component: Projects,
-    bgColor: "bg-blue-950",
-    textColor: "text-white",
+    id: "skills",
+    component: Skills,
   },
   {
     id: "about",
     component: About,
-    bgColor: "bg-red-950",
-    textColor: "text-white",
   },
   {
-    id: "resume",
-    component: Resume,
-    bgColor: "bg-yellow-950",
-    textColor: "text-white",
+    id: "projects",
+    component: Projects,
   },
 ];
 </script>
@@ -44,11 +36,7 @@ const sections = [
         v-for="section in sections"
         :key="section.id"
         :id="section.id"
-        :class="[
-          'h-screen flex flex-col justify-center items-center',
-          section.bgColor,
-          section.textColor,
-        ]"
+        class="h-screen flex flex-col justify-center items-center bg-linear-to-r from-slate-900/90 via-blue-900/90 to-slate-900/90"
       >
         <component :is="section.component" />
       </section>
